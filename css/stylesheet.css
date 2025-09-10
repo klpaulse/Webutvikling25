@@ -1,0 +1,41 @@
+body{
+    font-family: arial;
+}
+
+
+
+#mainlogo{
+    font-size: 30px;
+    font-family: arial;
+    font-weight: 900;
+    color: #673AB7;
+    text-decoration: none
+}
+
+a{
+    color:#000;
+    text-decoration: none;  
+}
+
+article{
+    margin: 1rem 0;
+    border:1px solid #efefef; 
+    max-width: 400px;
+    width: 100%;
+    min-width: 250px;
+    padding: 1rem; 
+
+    img{
+        width: 100%;
+    }
+
+}
+
+.btn{
+    display: inline-block;
+    background-color:#000;
+    color: #fff;
+    padding: 1rem; 
+}
+
+/*malen til å legge til en kommentar i arket*/
