@@ -1,9 +1,12 @@
 :root{
     --basic-grey:#efefefef;
-    --basic-red:#d30101;
+    --basic-red:#ec9c9c;
 }
 
+*{
+    box-sizing: border-box;
 
+}
 
 
 body{
@@ -31,7 +34,7 @@ body{
 
 #mainlogo{
     font-size: 30px;
-    font-family: arial;
+    font-family: Arial, Helvetica, sans-serif;
     font-weight: 900;
     color: #673AB7;
     text-decoration: none
@@ -44,9 +47,55 @@ a{
 
 /*hero-section*/
 .deal-section{
+    background-image: url("https://picsum.photos/800/500?grayscale");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+
     background-color:var(--basic-red);
     padding:1rem; 
+    position: relative;
+    height: 50vh;
+    min-height: 200px;
 }
+
+/*
+    img{
+      
+        top: 0;
+        left: 0;
+        width: 100€%;
+    }
+    h2, p, a{
+          position: absolute;
+          
+
+    }
+
+    p{
+        top: 63px;
+    }
+
+    a{
+        top: 160px;
+    }
+}
+    */
+main{
+    max-width: 1200px;
+    width: 100%;
+    margin: 1rem auto; 
+
+    section {
+        h2{
+            text-align: center; 
+        }
+        article {
+            margin: 0 auto; 
+        }
+    }
+}
+
 
 article{
     margin: 1rem 0;
@@ -70,4 +119,30 @@ article{
     border: none;
 }
 
+.side-container{
+    background-color:var(--basic-red);
+    padding: 1rem;
+
+    form{
+
+        input{
+            display: block;
+            padding: 1rem;
+            margin: 0.4rem; 
+        }
+    }
+}
+
+.age-check{
+    display: flex;
+    align-items: center;
+    gap: 1rem; 
+}
+
+footer{
+    background-color:#212424;
+    color:#fff;
+    padding: 1rem; 
+    min-height: 150px;
+}
 /*malen til å legge til en kommentar i arket*/
