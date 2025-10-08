@@ -1,0 +1,324 @@
+
+:root{
+    --basic-grey: #efefef;
+    --blue: #5b56ef; 
+
+
+}
+
+*{
+    box-sizing:border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Funnel+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+
+    
+    
+
+body{
+    font-family: "lexend", sans-serif;
+    margin: 0; 
+    display: flex;
+    background-color: var(--basic-grey)
+    
+
+}
+
+img{
+    width: 100%; 
+}
+
+
+#global-header{
+    display:flex;
+    flex-direction: column;
+    
+
+ nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 4px 9px #c4c4c4; 
+    padding: 1rem; 
+     
+
+ }
+
+}
+
+#hero{
+    min-height: 300px;
+    display: flex;
+    align-items: start; 
+    flex-direction: column; 
+    padding: 1rem; 
+    justify-content: center;
+
+}
+
+.highlight{
+    padding: 1rem; 
+    figure{
+        margin: 0;
+        
+    }
+}
+
+#services{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1rem; 
+
+    h2{
+        width: 100%;
+    }
+
+    .service-card{
+        width: 100%;
+    }
+
+    
+}
+
+.btn{
+    display: inline-block;
+    background-color: #000000; 
+    color: #fff;
+    padding: 1rem;
+    border: none;
+    text-decoration: none;
+    border-radius: 8px; 
+    
+    
+}
+.icon-btn{
+    background-color: transparent;
+    border: none; 
+}
+
+   
+#logo{
+    display:flex;
+    color: #f6f6f6;
+
+
+}
+
+
+
+
+header{
+    grid-area: topp;
+    background-color: var(--blue)
+
+}
+
+
+
+main{
+    grid-area: hovedinnhold;
+}
+
+aside{
+    display: flex; 
+    flex-direction: column;
+    grid-area: sideinnhold;
+}
+
+footer{ 
+    display: flex;
+    align-items: center;
+    justify-self:center;
+    flex-direction: column; 
+    grid-area: bunn;
+    background-color: var(--blue) 
+
+}
+
+
+
+
+header, main, aside, footer{
+    padding: 1rem;
+}
+
+h2{
+    font-size:2rem;
+    margin-bottom: 10px;
+    
+
+}
+
+article{
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; 
+    text-align: start;
+    font-size: 200%;
+    width: 70%;
+    padding: 1rem; 
+    
+
+     
+    
+
+}
+
+p{
+    margin-top: 0; 
+}
+
+h3{
+    font-size:2rem;
+    margin-bottom: 20px;
+}
+
+
+
+.ikon{
+    display: flex;
+    align-items: center;
+    align-content: center; 
+    justify-content: center; 
+    width: 70px;
+    height: 70px;               
+    border: 2px solid #000000;  
+   border-radius: 50%;      
+   font-size: 40px;    
+   margin-top: 4px;
+   line-height: 1;
+  padding-top: 4px;   
+   background-color: white;
+  
+  
+    
+}
+
+section.sek {
+  display: flex;
+  align-items: flex-start; 
+  gap: 10px;
+  margin-bottom: 1.5em;
+}
+ 
+ 
+.sek{
+      display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 4px;
+  padding: 1rem; 
+  width: 70%; 
+}
+
+.sek h4{
+    margin: 0; 
+  line-height: 1.2
+}
+
+.sek p{
+    margin-top: 0; 
+}
+
+
+
+
+
+
+.hidden{
+    display:none; 
+}
+
+
+@media only screen and (max-width:600px){
+
+
+#menu{
+    background-color: #d1d0fc;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding: 2rem; 
+
+}
+.ikoner{
+display: flex;
+gap: 1rem;
+    
+}
+
+section{
+    
+    flex-direction: column;
+    text-align: start; 
+    font-size: 2rem;
+    font-weight:bolder;
+    width: 90%;
+    padding: 2rem; 
+
+}
+
+
+
+.btn:hover,
+.btn:focus{
+    filter: brightness(1.1);
+    outline: 2px solid durrentColor;
+    outline-offset: 2px;
+
+}
+
+}
+
+
+
+@media only screen and (min-width:600px){
+
+#grid-container{
+    display: grid;
+     grid-template-columns: 3fr 1fr;
+     grid-template-areas: "topp topp" 
+                          "seksjon seksjon" 
+                          "hovedinnhold sideinnhold" 
+                          "bunn bunn"
+
+}
+ header{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .hidden{
+        display: inline-block;
+    }
+
+    img{
+        width: 100%;
+        max-width: 900px;
+    }
+
+
+    #menu{
+        ul{
+            display: flex;
+            gap: 1rem;
+        }
+    }
+
+    #ham{
+        display: none;
+    }
+    #close{
+        display: none;
+
+    }
+}
+
+
+
+    
+
+
+

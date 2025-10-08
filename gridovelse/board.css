@@ -1,0 +1,295 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url("bak.png");
+    background-size: cover;
+    padding: 0 3rem;
+}
+
+div{
+    background-color: #F3EADB;
+    border: 2px solid #35291f;
+    border-radius: 10px;
+    margin: 1px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+
+}
+
+div i{
+    width: 100%;
+}
+.fas.fa-gem{
+    font-size: 30px;
+    color: #37b4ff;
+    text-shadow: 5px 4px 4px #7f7f7f;
+}
+
+.fas.fa-coins{
+    font-size: 30px;
+    color: #fff22e;
+    text-shadow: 5px 4px 4px #7f7f7f;
+}
+
+.fas.fa-dragon {
+    font-size: 30px;
+    color: brown;
+    text-shadow: 5px 4px 4px #7f7f7f;
+}
+
+.fas.fa-hat-wizard {
+    font-size: 33px;
+    transform: rotate(-21deg);
+    color: #53399e;
+    text-shadow: 5px 4px 4px #7f7f7f;
+}
+
+
+
+#grid-container{
+    display: grid;
+    margin: 0 auto;
+    max-width: 900px;
+    width: 100%;
+    /*Denne kan skrives anderledes, men det skal være 9 kolonner*/
+    grid-template-columns: repeat(9, 1fr);
+    /*Denne kan skrives anderledes, men det skal være 10 rader*/
+    grid-template-rows: repeat(10, 1fr);
+    min-height: 900px;
+}
+
+#cell-1{
+   grid-row-start:3 ;
+    grid-row-end: 4;
+    grid-column-start: 1;
+    grid-column-end: 2;
+
+}
+
+#cell-2{
+    grid-row-start: 4;
+    grid-row-end: 5;
+    grid-column-start: 1;
+    grid-column-end: 2;
+
+}
+
+#cell-3{
+    grid-row-start: 5;
+    grid-row-end: 6;
+    grid-column-start: 1;
+    grid-column-end: 2;
+
+}
+
+#cell-4{
+    grid-row-start: 5;
+    grid-row-end: 6;
+    grid-column-start: 2;
+    grid-column-end: 3;
+
+}
+
+#cell-5{
+    grid-row-start: 6;
+    grid-row-end: 7;
+    grid-column-start: 3;
+    grid-column-end: 4;
+
+}
+
+/*Avsporing*/
+
+#cell-6{
+      grid-row-start: 5;
+    grid-row-end: 6;
+    grid-column-start: 3;
+    grid-column-end: 4;
+
+}
+
+#cell-7{
+    grid-row-start: 4;
+    grid-row-end: 5;
+    grid-column-start: 3;
+    grid-column-end: 4;
+
+
+}
+
+#cell-8{
+    grid-row-start: 7;
+    grid-row-end: 8;
+    grid-column-start: 3;
+    grid-column-end: 4;
+
+
+}
+
+#cell-9{
+    grid-row-start: 9;
+    grid-row-end: 10;
+    grid-column-start: 3;
+    grid-column-end: 4;
+
+}
+/*Slutt på avsporing*/
+
+#cell-10{
+    grid-row-start: 4;
+    grid-row-end: 5;
+    grid-column-start: 4;
+    grid-column-end: 5;
+
+}
+
+#cell-11{
+    grid-row-start: 8;
+    grid-row-end:9;
+    grid-column-start: 3;
+    grid-column-end: 4;
+
+}
+
+#cell-12{
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 5;
+    grid-column-end: 6;
+
+}
+
+/*Avsporing*/
+
+#cell-13{
+    grid-row-start:3;
+    grid-row-end: 4;
+    grid-column-start: 5;
+    grid-column-end: 6;
+
+}
+
+#cell-14{
+    grid-row-start: 4;
+    grid-row-end: 5;
+    grid-column-start: 5;
+    grid-column-end: 6;
+
+}
+
+/*Slutt på avsporing*/
+
+#cell-15{
+    grid-row-start: 5;
+    grid-row-end: 6;
+    grid-column-start: 5;
+    grid-column-end: 6;
+
+}
+
+#cell-16{
+    grid-row-start: 7;
+    grid-row-end: 8;
+    grid-column-start: 7;
+    grid-column-end: 8;
+
+}
+
+#cell-17{
+    grid-row-start: 6;
+    grid-row-end: 7;
+    grid-column-start: 5;
+    grid-column-end: 6;
+
+}
+
+#cell-18{
+    grid-row-start: 6;
+    grid-row-end: 7;
+    grid-column-start: 6;
+    grid-column-end: 7;
+
+}
+
+/*Avsporing*/
+
+#cell-19{
+    grid-row-start: 6;
+    grid-row-end: 7;
+    grid-column-start: 7;
+    grid-column-end: 8;
+
+}
+
+/*Slutt på avsporing*/
+
+#cell-20{
+    grid-row-start: 4;
+    grid-row-end: 5;
+    grid-column-start: 7;
+    grid-column-end: 8;
+
+}
+
+#cell-21{
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 7;
+    grid-column-end: 8;
+
+
+}
+
+#cell-22{
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 8;
+    grid-column-end: 9;
+
+
+}
+
+#cell-23{
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 9;
+    grid-column-end: 10;
+
+
+}
+
+#cell-24{
+    grid-row-start: 4;
+    grid-row-end: 5;
+    grid-column-start: 9;
+    grid-column-end: 10;
+
+
+}
+
+#cell-25{
+    grid-row-start: 5;
+    grid-row-end: 6;
+    grid-column-start: 9;
+    grid-column-end: 10;
+
+}
+
+#cell-26{
+    grid-row-start: 6;
+    grid-row-end: 7;
+    grid-column-start: 9;
+    grid-column-end: 10;
+
+}
+
+#cell-27{
+    grid-row-start: 6;
+    grid-row-end: 7;
+    grid-column-start: 8;
+    grid-column-end: 9;
+
+}
