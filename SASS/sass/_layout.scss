@@ -1,0 +1,31 @@
+@mixin alertLayout($columns, $rows){
+    display: grid; 
+    grid-template-columns: $columns;
+    grid-template-rows: $rows ;
+    gap: 1rem; 
+}
+
+#grid-layout{
+    @include alertLayout(1fr 1fr 1fr, auto);
+}
+
+.main-container{
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto; 
+    padding: 0 15px;
+}
+
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem; 
+}
+
+.flex-column{
+    @extend .flex;
+    flex-direction: column;
+}
+
+
+

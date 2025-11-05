@@ -4,11 +4,6 @@
     --header: #cbdceb;
     --footer: #6d94c5; 
 
-    --small: clamp(14px, 1em + 1vw, 18px); /*kan ikke bli mindre enn... kan ikke bli større enn.. plusse med to, ved medium,large og større*/
-    --medium: clamp(16px, 1em + 1vw, 20px);
-    --large: clamp(18px, 1em + 1vw, 24px);
-
-
 }
 
 *{

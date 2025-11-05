@@ -170,7 +170,7 @@
      min-height: 150px;         /* Egenskap: minste høyde | Verdi: minst 150px høy */
      grid-column: 1 / 2;        /* Egenskap: grid-plassering (kolonner) | Verdi: kolonne 1 */
      grid-row: 5 / 6; 
-     justify-content: center;           /* Egenskap: grid-plassering (rader) | Verdi: rad 5 */
+              /* Egenskap: grid-plassering (rader) | Verdi: rad 5 */
    }
    
    /* ====== MEDIA QUERY: >= 600px ====== */

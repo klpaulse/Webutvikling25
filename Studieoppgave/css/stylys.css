@@ -58,28 +58,62 @@ img{
 }
 
 .highlight{
-    padding: 1rem; 
+    padding: 0rem; 
+    display: flex; 
+    flex-wrap: wrap;
+   
+
+    >*{
+        width: 50%;
+         min-width: 350px;
+         flex-grow: 1; 
+
+    }
     figure{
         margin: 0;
-        
+    
     }
+    section{
+        padding: 1rem; 
+        display: flex; 
+        flex-wrap: wrap; 
+        align-items: center; 
+        justify-content: center; 
+
+    }
+}
+
+.highlight:nth-child(even){
+    flex-direction: row-reverse;
 }
 
 #services{
     display: flex;
     flex-wrap: wrap;
     padding: 1rem; 
+    justify-content: center; 
+    background-color: #a7a7a7;
 
-    h2{
+    h3{
         width: 100%;
+        text-align: center; 
     }
 
     .service-card{
-        width: 100%;
+        width: 33%;
+        display: flex;
+        gap: 1rem;
+        align-items: center; 
+        justify-content: center; 
+        min-width: 250px; 
+        flex-grow: 1; 
+        /*max-width: 400px; */
+
     }
 
     
 }
+
 
 .btn{
     display: inline-block;
@@ -195,39 +229,19 @@ h3{
     
 }
 
-section.sek {
-  display: flex;
-  align-items: flex-start; 
-  gap: 10px;
-  margin-bottom: 1.5em;
-}
  
- 
-.sek{
-      display: flex;
-  align-items: center;
-  gap: 8px;
-  margin-bottom: 4px;
-  padding: 1rem; 
-  width: 70%; 
-}
-
-.sek h4{
-    margin: 0; 
-  line-height: 1.2
-}
-
-.sek p{
-    margin-top: 0; 
-}
-
-
-
-
 
 
 .hidden{
     display:none; 
+}
+
+@media only screen and (min-width: 815px){
+    .service-card{
+        max-width: 450px; 
+        flex-direction: column; 
+        text-align: center; 
+    }
 }
 
 
@@ -276,15 +290,7 @@ section{
 
 @media only screen and (min-width:600px){
 
-#grid-container{
-    display: grid;
-     grid-template-columns: 3fr 1fr;
-     grid-template-areas: "topp topp" 
-                          "seksjon seksjon" 
-                          "hovedinnhold sideinnhold" 
-                          "bunn bunn"
 
-}
  header{
         display: flex;
         justify-content: space-between;
