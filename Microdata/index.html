@@ -29,16 +29,19 @@
             </ul>
         </nav>
         <main itemscope itemtype="https://schema.org/Product">
-            <nav id="breadcrumbs">
+            <nav id="breadcrumbs" itemscope itemtype="https://schema.org/BreadcrumbList">
                 <ul>
-                    <li>
-                        <a href="index.html">Home /</a>
+                    <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                        <meta itemprop = "position" content="1">
+                        <a itemprop="item" href="index.html"><span itemprop="name"> Home </span></a>
                     </li>
-                    <li>
-                        <a href="index.html">Running shoes /</a>
+                    <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                         <meta itemprop = "position" content="2">
+                        <a itemprop="item" href="index.html"> <span itemprop="name">Running shoes</span></a>
                     </li>
-                    <li>
-                        <a href="index.html">Pink runners</a>
+                    <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                         <meta itemprop = "position" content="3">
+                        <a itemprop="item" href="index.html"><span itemprop="name">Pink runners</span></a>
                     </li>
                 </ul>
             </nav>
@@ -55,8 +58,12 @@
                     <a href="#"itemprop="category">Shosies</a>
                 </span>
                 <h3 itemprop="name">Pink runners</h3>
-                <span>1499,00 kr</span>
-                <p itemprop="descripctio>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati</p>
+                <div itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                    <meta itemprop="priceCurrency" content="NOK">
+                <span itemprop="price" content="1499">1499,00 kr</span>
+                </div >
+
+                <p itemprop="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati</p>
                 <form>
                     <label for="size">Size:</label>
                     <select name="size" id="size">
