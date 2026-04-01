@@ -5,9 +5,29 @@
     gap: 1rem; 
 }
 
-#grid-layout{
-    @include alertLayout(1fr 1fr 1fr, auto);
+@mixin gridPlacement ($col, $row){
+    grid-column: #{$col};
+    grid-row: #{$row};
 }
+
+#grid-layout{
+    @include alertLayout(1fr 1fr, auto);
+    article{
+        &:nth-child(1){
+            @include gridPlacement('1/2', '1/2')
+            
+        }
+         &:nth-child(2){
+            @include gridPlacement('2/3', '1/2')
+        
+        }
+         &:nth-child(3){
+            @include gridPlacement(1/2, 1/2)
+            grid-column: span 2;
+            grid-row: 2 / 3; 
+        }
+    }
+
 
 .main-container{
     max-width: 1200px;

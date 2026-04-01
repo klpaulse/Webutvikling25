@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+   <div id="page-container">
+    <header>
+        <h1>Høgskolen JS</h1>
+    </header>
+    <main>
+
+    <h2>Legg til ansatt</h2>
+
+    <form>
+        <div class="input">
+    <label for="firstname">Fornavn</label>
+    <input type="text" value="" name="firstname" id="firstname" placeholder="fornavn">
+    </div>
+
+    
+
+    <div class="input">
+    <label for="lastname">Etternavn</label>
+    <input  type="text" value="" name="lastname" id="lastname" placeholder="etternavn">
+    </div>
+
+
+    <div class="input">
+    <label for="epost">E-post</label>
+    <input type="email" value="" name="epost" id="epost" placeholder="e-post">
+    </div>
+
+
+    <div class="input">
+    <label for="office">Kontor</label>
+    <input type="text" value="" name="office" id="office" placeholder="kontor">
+    </div>
+
+
+    <div class="input">
+    <label for="role">Stilling</label>
+         <select name="role" id="role">
+        <option value="">Velg stilling</option>
+        <option value="Professor">Professor</option>
+        <option value="Dekan">Dekan</option>
+        <option value="Rektor">Rektor</option>
+        <option value="Vaktmester">Vaktmester</option>
+        <option value="Lektor">Lektor</option>
+    </select>
+    </div>
+
+
+    <div class="input">
+    <label for="course">Kurs</label>
+    <input type="text" value="" name="course" id="course" placeholder="kursansvar">
+    </div>
+
+
+    <button class="knapp" type="button" id="nyansatt">Legg til ansatt</button>
+
+    </form>
+    
+
+    <section>
+        <h2>Ansatte</h2>
+     <div id="allemployees"></div>
+     </section>
+     
+    </main>
+    <footer>
+        <h3>Kursoversikt</h3>
+    <div id="allecourses"></div>
+    </footer>
+</div>
+   <script src="../oppgave1/register.js"></script>
+    <script src="../oppgave1/actions.js"></script>
+    
+</body>
+</html>
